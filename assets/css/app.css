@@ -1,0 +1,95 @@
+/* Write your styles */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.am-g {
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid #EEE;
+    background-color: #368073;
+}
+
+.am-g-fixed {
+    max-width: 500px;
+}
+
+.boxes {
+    width: 300px;
+
+}
+
+.boxes .box {
+    height: 100px;
+    color: #eee;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    transition: all .2s ease;
+}
+
+.boxes .box:hover {
+    font-size: 250%;
+    transform: rotate(360deg);
+}
+
+.box-1 {
+    background-color: red;
+}
+
+.box-2 {
+    background-color: orange;
+}
+
+.box-3 {
+    background-color: #0000ff;
+}
+
+.box-4 {
+    background-color: #008000;
+}
+
+.box-5 {
+    background-color: red;
+}
+
+.box-6 {
+    background-color: orange;
+}
+
+.box-7 {
+    background-color: #0000ff;
+}
+
+.box-8 {
+    background-color: #008000;
+}
+
+.box-9 {
+    background-color: green;
+}
+.am-text-truncate {
+    word-wrap: normal; /* for IE */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.doc-ir-demo h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+.doc-ir-demo a {
+    display: block;
+    height: 29px;
+    width: 125px;
+    background: url(../i/startup-640x1096.png) no-repeat left center;
+    -webkit-background-size: 125px 24px;
+    background-size: 125px 24px;
+}
+
+.am-dropdown-toggle:hover + .am-dropdown-content{
+    display:inline-block;
+    /* 还可以加点动画效果 */
+}　
