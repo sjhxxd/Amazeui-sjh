@@ -21,24 +21,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index-c.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index-c.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xiguachong-copy/index-c.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="129" column="36" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.33052886">
+              <caret line="167" column="116" selection-start-line="167" selection-start-column="80" selection-end-line="167" selection-end-column="116" />
               <folding>
-                <marker date="1444880156367" expanded="true" signature="1491:1622" placeholder="..." />
-                <marker date="1444880156367" expanded="true" signature="1540:1604" placeholder="..." />
+                <marker date="1444958182465" expanded="true" signature="1491:1622" placeholder="..." />
+                <marker date="1444958182465" expanded="true" signature="1540:1604" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xiguachong-copy/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8083141">
-              <caret line="172" column="12" selection-start-line="172" selection-start-column="12" selection-end-line="172" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="160" column="19" selection-start-line="160" selection-start-column="19" selection-end-line="160" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -100,8 +100,8 @@
         <option value="$PROJECT_DIR$/xinjian/index.html" />
         <option value="$PROJECT_DIR$/assets/css/app.css" />
         <option value="$PROJECT_DIR$/xiguachong-copy/fenlei-c.html" />
-        <option value="$PROJECT_DIR$/xiguachong-copy/index-c.html" />
         <option value="$PROJECT_DIR$/xiguachong-copy/css/index.css" />
+        <option value="$PROJECT_DIR$/xiguachong-copy/index-c.html" />
       </list>
     </option>
   </component>
@@ -156,6 +156,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AmazeUI-2.4.2-sjh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AmazeUI-2.4.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AmazeUI-2.4.2-sjh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiguachong-copy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AmazeUI-2.4.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AmazeUI-2.4.2-sjh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiguachong-copy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -392,6 +424,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33256352">
           <caret line="173" column="22" selection-start-line="173" selection-start-column="22" selection-end-line="173" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -642,22 +675,22 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiguachong-copy/index-c.html">
+    <entry file="file://$PROJECT_DIR$/xiguachong-copy/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="129" column="36" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="36" />
-          <folding>
-            <marker date="1444880156367" expanded="true" signature="1491:1622" placeholder="..." />
-            <marker date="1444880156367" expanded="true" signature="1540:1604" placeholder="..." />
-          </folding>
+          <caret line="160" column="19" selection-start-line="160" selection-start-column="19" selection-end-line="160" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiguachong-copy/css/index.css">
+    <entry file="file://$PROJECT_DIR$/xiguachong-copy/index-c.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8083141">
-          <caret line="172" column="12" selection-start-line="172" selection-start-column="12" selection-end-line="172" selection-end-column="12" />
-          <folding />
+        <state vertical-scroll-proportion="0.33052886">
+          <caret line="167" column="116" selection-start-line="167" selection-start-column="80" selection-end-line="167" selection-end-column="116" />
+          <folding>
+            <marker date="1444958182465" expanded="true" signature="1491:1622" placeholder="..." />
+            <marker date="1444958182465" expanded="true" signature="1540:1604" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
