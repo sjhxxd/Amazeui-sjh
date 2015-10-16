@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Hello Amaze UI</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+<!--在这里编写你的代码-->
+
+<a href="weixin://contacts/profile/gh_dd4b2c2ada8b">点击这里添加Baidufe公众号</a>
+
+
+<div class="am-tabs" data-am-tabs>
+    <ul class="am-tabs-nav am-nav am-nav-tabs">
+        <li class="am-active"><a href="#tab1">恣意</a></li>
+        <li><a href="#tab2">等候</a></li>
+        <li><a href="#tab3">流浪</a></li>
+    </ul>
+
+    <div class="am-tabs-bd">
+        <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+            置身人群中<br>你只需要被淹没 享受 沉默<br>退到人群后<br>你只需给予双手 微笑 等候
+        </div>
+        <div class="am-tab-panel am-fade" id="tab2">
+            走在忠孝东路<br>徘徊在茫然中<br>在我的人生旅途<br>选择了多少错误<br>我在睡梦中惊醒<br>感叹悔言无尽<br>恨我不能说服自己<br>接受一切教训<br>让生命去等候<br>等候下一个漂流<br>让生命去等候<br>等候下一个伤口
+        </div>
+        <div class="am-tab-panel am-fade" id="tab3">
+            我就这样告别山下的家，我实在不愿轻易让眼泪留下。我以为我并不差不会害怕，我就这样自己照顾自己长大。我不想因为现实把头低下，我以为我并不差能学会虚假。怎样才能够看穿面具里的谎话？别让我的真心散的像沙。如果有一天我变得更复杂，还能不能唱出歌声里的那幅画？
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<a id="btn" href="javascript:void(0)"><img src="assets/i/favicon.png" alt="开心" /></a>
+
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="assets/js/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script src="assets/js/app.js" async="async"></script>
+<!--<script async="async">-->
+    <!--function viewProfile() {-->
+        <!--if (typeof WeixinJSBridge != "undefined" && WeixinJSBridge.invoke) {-->
+            <!--WeixinJSBridge.invoke('profile', {-->
+                <!--'username': 'gh_dd4b2c2ada8b', /* 你的公众号原始ID */-->
+                <!--'scene': '57'-->
+            <!--});-->
+        <!--}-->
+    <!--}-->
+<!--</script>-->
+
+<script async="async">
+    $(function() {
+        var tabCounter = 0;
+        var $tab = $('#doc-tab-demo-1');
+        var $nav = $tab.find('.am-tabs-nav');
+        var $bd = $tab.find('.am-tabs-bd');
+
+        function addTab() {
+            var nav = '<li><span class="am-icon-close"></span>' +
+                    '<a href="javascript: void(0)">标签 ' + tabCounter + '</a></li>';
+            var content = '<div class="am-tab-panel">动态插入的标签内容' + tabCounter + '</div>';
+
+            $nav.append(nav);
+            $bd.append(content);
+            tabCounter++;
+            $tab.tabs('refresh');
+        }
+
+        // 动态添加标签页
+        $('.js-append-tab').on('click', function() {
+            addTab();
+        });
+
+        // 移除标签页
+        $nav.on('click', '.am-icon-close', function() {
+            var $item = $(this).closest('li');
+            var index = $nav.children('li').index($item);
+
+            $item.remove();
+            $bd.find('.am-tab-panel').eq(index).remove();
+
+            $tab.tabs('open', index > 0 ? index - 1 : index + 1);
+            $tab.tabs('refresh');
+        });
+    });
+
+
+    $(document).ready(function(){
+        var num=0; //初次加载为0
+        $('#btn').click(function(){
+            num++;
+            alert("您单击了"+num+"次"); //显示单击的次数
+        });
+    });
+</script>
+
+</body>
+</html>

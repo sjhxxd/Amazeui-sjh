@@ -1,0 +1,36 @@
+.active img.word{
+    -webkit-animation: fadeInDown 1s ease-out 0s both;
+    animation: fadeInDown 1s ease-out 0s both
+}
+.active img.pic{
+    -webkit-animation: fadeInUp 1s ease-out 0s both;
+    animation: fadeInUp 1s ease-out 0s both
+}
+.active img.phone{
+    -webkit-animation: zoomIn 1s ease-out 0s both;
+    animation: zoomIn 1s ease-out 0s both
+}
+.active img.circle{
+    -webkit-animation: zoomIn 1s ease-out 0s both;
+    animation: zoomIn 1s ease-out 0s both
+}
+.active img.foot{
+    -webkit-animation: fadeInUp 1s ease-out 0s both;
+    animation: fadeInUp 1s ease-out 0s both
+}
+.active img.code{
+    -webkit-animation: bounceIn 1s ease-out 0s both;
+    animation: bounceIn 1s ease-out 0s both
+}
+.active img.contact{
+    -webkit-animation: zoomInRight 1s ease-out 0s both;
+    animation: zoomInRight 1s ease-out 0s both
+}
+.active img.address{
+    -webkit-animation: zoomInUp 1s ease-out 0s both;
+    animation: zoomInUp 1s ease-out 0s both
+}
+.active img.arrows{
+    -webkit-animation: zoomInLeft 1s ease-out 0s both;
+    animation: zoomInLeft 1s ease-out 0s both
+}

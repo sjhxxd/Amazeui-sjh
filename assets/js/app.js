@@ -117,6 +117,38 @@ $(function() {
 
 });
 
+$(function(){
+   $('#my-scrollspy').scrollspy({
+       animation:'slide-left',
+       delay:500
+   })
+});
+
+$(function() {
+    $('#my-scrollspy').on('inview.scrollspy.amui', function() {
+        console.log('进入视口');
+    }).on('outview.scrollspy.amui', function() {
+        console.log('离开视口');
+    });
+});
+
+
+
+
+
+
+$(function() {
+    // 使用默认参数
+    $('select').selected();
+
+    // 设置参数
+    $('select').selected({
+        btnWidth: '300px',
+        btnSize: 'sm',
+        btnStyle: 'primary',
+        maxHeight: '100px'
+    });
+});
 ////判断终端类型
 //var browser = {
 //    versions: function () {

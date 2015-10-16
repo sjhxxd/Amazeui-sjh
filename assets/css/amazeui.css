@@ -3977,7 +3977,7 @@ fieldset[disabled] .am-checkbox-inline {
 .am-article + .am-article {
   margin-top: 2.4rem;
 }
-/* Sub-object `.@{ns}article-title` */
+/* Sub-object插入flash `.@{ns}article-title` */
 .am-article-title {
   font-size: 2.8rem;
   line-height: 1.15;
@@ -3987,13 +3987,13 @@ fieldset[disabled] .am-checkbox-inline {
   color: inherit;
   text-decoration: none;
 }
-/* Sub-object `.@{ns}article-meta` */
+/* Sub-object插入flash `.@{ns}article-meta` */
 .am-article-meta {
   font-size: 1.2rem;
   line-height: 1.5;
   color: #999999;
 }
-/* Sub-object `.@{ns}article-lead` */
+/* Sub-object插入flash `.@{ns}article-lead` */
 .am-article-lead {
   color: #666666;
   font-size: 1.4rem;
@@ -4003,7 +4003,7 @@ fieldset[disabled] .am-checkbox-inline {
   background: #f9f9f9;
   padding: 10px;
 }
-/* Sub-object `.@{ns}article-divider` */
+/* Sub-object插入flash `.@{ns}article-divider` */
 .am-article-divider {
   margin-bottom: 2.4rem;
   border-color: #eeeeee;
@@ -4011,7 +4011,7 @@ fieldset[disabled] .am-checkbox-inline {
 * + .am-article-divider {
   margin-top: 2.4rem;
 }
-/* Sub-object `.@{ns}article-bd` */
+/* Sub-object插入flash `.@{ns}article-bd` */
 .am-article-bd blockquote {
   font-family: Georgia, "Times New Roman", Times, Kai, "Kaiti SC", KaiTi, BiauKai, "FontAwesome", serif;
 }
@@ -7102,7 +7102,7 @@ img.am-thumbnail,
   vertical-align: middle;
 }
 /*
-* Sub-object which can have any height
+* Sub-object插入flash which can have any height
 * 1. Reset whitespace hack
 */
 .am-vertical-align-middle,
@@ -8969,7 +8969,7 @@ ul.am-dropdown-content > .am-disabled > a:focus {
           transition: margin-left 0.3s ease-in-out;
   /* 2 */
 }
-/* Sub-object .@{ns}offcanvas-bar */
+/* Sub-object插入flash .@{ns}offcanvas-bar */
 .am-offcanvas-bar {
   position: fixed;
   top: 0;

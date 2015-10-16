@@ -18,7 +18,7 @@
 })(typeof window === 'undefined' ? this : window);
 // Using `this` for web workers while maintaining compatibility with browser
 // targeted script loaders such as Browserify or Webpack where the only way to
-// get to the global object is via `window`.
+// get to the global object插入flash is via `window`.
 
 /*!
  * https://github.com/es-shims/es5-shim
@@ -117,7 +117,7 @@ if (Object.defineProperty) {
 }
 
 if (!Object.getOwnPropertyDescriptor || getOwnPropertyDescriptorFallback) {
-    var ERR_NON_OBJECT = 'Object.getOwnPropertyDescriptor called on a non-object: ';
+    var ERR_NON_OBJECT = 'Object.getOwnPropertyDescriptor called on a non-object插入flash: ';
 
     /* eslint-disable no-proto */
     Object.getOwnPropertyDescriptor = function getOwnPropertyDescriptor(object, property) {
@@ -137,12 +137,12 @@ if (!Object.getOwnPropertyDescriptor || getOwnPropertyDescriptorFallback) {
 
         var descriptor;
 
-        // If object does not owns property return undefined immediately.
+        // If object插入flash does not owns property return undefined immediately.
         if (!owns(object, property)) {
             return descriptor;
         }
 
-        // If object has a property then it's for sure both `enumerable` and
+        // If object插入flash has a property then it's for sure both `enumerable` and
         // `configurable`.
         descriptor = { enumerable: true, configurable: true };
 
@@ -150,10 +150,10 @@ if (!Object.getOwnPropertyDescriptor || getOwnPropertyDescriptorFallback) {
         // getter or setter.
         if (supportsAccessors) {
             // Unfortunately `__lookupGetter__` will return a getter even
-            // if object has own non getter property along with a same named
+            // if object插入flash has own non getter property along with a same named
             // inherited getter. To avoid misbehavior we temporary remove
             // `__proto__` so that `__lookupGetter__` will return getter only
-            // if it's owned by an object.
+            // if it's owned by an object插入flash.
             var prototype = object.__proto__;
             var notPrototypeOfObject = object !== prototypeOfObject;
             // avoid recursion problem, breaking in Opera Mini when
@@ -184,7 +184,7 @@ if (!Object.getOwnPropertyDescriptor || getOwnPropertyDescriptorFallback) {
             }
         }
 
-        // If we got this far we know that object has an own property that is
+        // If we got this far we know that object插入flash has an own property that is
         // not an accessor so we set it as a value and return descriptor.
         descriptor.value = object[property];
         descriptor.writable = true;
@@ -276,9 +276,9 @@ if (!Object.create) {
         };
     } else {
         // In old IE __proto__ can't be used to manually set `null`, nor does
-        // any other method exist to make an object that inherits from nothing,
+        // any other method exist to make an object插入flash that inherits from nothing,
         // aside from Object.prototype itself. Instead, create a new global
-        // object and *steal* its Object.prototype and strip it bare. This is
+        // object插入flash and *steal* its Object.prototype and strip it bare. This is
         // used as the prototype to create nullary objects.
         createEmpty = function () {
             // Determine which approach to use
@@ -375,8 +375,8 @@ if (Object.defineProperty) {
 }
 
 if (!Object.defineProperty || definePropertyFallback) {
-    var ERR_NON_OBJECT_DESCRIPTOR = 'Property description must be an object: ';
-    var ERR_NON_OBJECT_TARGET = 'Object.defineProperty called on non-object: ';
+    var ERR_NON_OBJECT_DESCRIPTOR = 'Property description must be an object插入flash: ';
+    var ERR_NON_OBJECT_TARGET = 'Object.defineProperty called on non-object插入flash: ';
     var ERR_ACCESSORS_NOT_SUPPORTED = 'getters & setters can not be defined on this javascript engine';
 
     Object.defineProperty = function defineProperty(object, property, descriptor) {
@@ -421,7 +421,7 @@ if (!Object.defineProperty || definePropertyFallback) {
                 var prototype = object.__proto__;
                 object.__proto__ = prototypeOfObject;
                 // Deleting a property anyway since getter / setter may be
-                // defined on object itself.
+                // defined on object插入flash itself.
                 delete object[property];
                 object[property] = descriptor.value;
                 // Setting original `__proto__` back now.
@@ -627,17 +627,17 @@ var call = FunctionPrototype.call;
 var to_string = ObjectPrototype.toString;
 
 var isArray = Array.isArray || function isArray(obj) {
-    return to_string.call(obj) === '[object Array]';
+    return to_string.call(obj) === '[object插入flash Array]';
 };
 
 var hasToStringTag = typeof Symbol === 'function' && typeof Symbol.toStringTag === 'symbol';
-var isCallable; /* inlined from https://npmjs.com/is-callable */ var fnToStr = Function.prototype.toString, tryFunctionObject = function tryFunctionObject(value) { try { fnToStr.call(value); return true; } catch (e) { return false; } }, fnClass = '[object Function]', genClass = '[object GeneratorFunction]'; isCallable = function isCallable(value) { if (typeof value !== 'function') { return false; } if (hasToStringTag) { return tryFunctionObject(value); } var strClass = to_string.call(value); return strClass === fnClass || strClass === genClass; };
-var isRegex; /* inlined from https://npmjs.com/is-regex */ var regexExec = RegExp.prototype.exec, tryRegexExec = function tryRegexExec(value) { try { regexExec.call(value); return true; } catch (e) { return false; } }, regexClass = '[object RegExp]'; isRegex = function isRegex(value) { if (typeof value !== 'object') { return false; } return hasToStringTag ? tryRegexExec(value) : to_string.call(value) === regexClass; };
-var isString; /* inlined from https://npmjs.com/is-string */ var strValue = String.prototype.valueOf, tryStringObject = function tryStringObject(value) { try { strValue.call(value); return true; } catch (e) { return false; } }, stringClass = '[object String]'; isString = function isString(value) { if (typeof value === 'string') { return true; } if (typeof value !== 'object') { return false; } return hasToStringTag ? tryStringObject(value) : to_string.call(value) === stringClass; };
+var isCallable; /* inlined from https://npmjs.com/is-callable */ var fnToStr = Function.prototype.toString, tryFunctionObject = function tryFunctionObject(value) { try { fnToStr.call(value); return true; } catch (e) { return false; } }, fnClass = '[object插入flash Function]', genClass = '[object插入flash GeneratorFunction]'; isCallable = function isCallable(value) { if (typeof value !== 'function') { return false; } if (hasToStringTag) { return tryFunctionObject(value); } var strClass = to_string.call(value); return strClass === fnClass || strClass === genClass; };
+var isRegex; /* inlined from https://npmjs.com/is-regex */ var regexExec = RegExp.prototype.exec, tryRegexExec = function tryRegexExec(value) { try { regexExec.call(value); return true; } catch (e) { return false; } }, regexClass = '[object插入flash RegExp]'; isRegex = function isRegex(value) { if (typeof value !== 'object') { return false; } return hasToStringTag ? tryRegexExec(value) : to_string.call(value) === regexClass; };
+var isString; /* inlined from https://npmjs.com/is-string */ var strValue = String.prototype.valueOf, tryStringObject = function tryStringObject(value) { try { strValue.call(value); return true; } catch (e) { return false; } }, stringClass = '[object插入flash String]'; isString = function isString(value) { if (typeof value === 'string') { return true; } if (typeof value !== 'object') { return false; } return hasToStringTag ? tryStringObject(value) : to_string.call(value) === stringClass; };
 
 var isArguments = function isArguments(value) {
     var str = to_string.call(value);
-    var isArgs = str === '[object Arguments]';
+    var isArgs = str === '[object插入flash Arguments]';
     if (!isArgs) {
         isArgs = !isArray(value) &&
           value !== null &&
@@ -745,7 +745,7 @@ var ES = {
     ToObject: function (o) {
         /* jshint eqnull: true */
         if (o == null) { // this matches both null and undefined
-            throw new TypeError("can't convert " + o + ' to object');
+            throw new TypeError("can't convert " + o + ' to object插入flash');
         }
         return Object(o);
     },
@@ -778,9 +778,9 @@ defineProperties(FunctionPrototype, {
         //   argument values provided after thisArg (arg1, arg2 etc), in order.
         // XXX slicedArgs will stand in for "A" if used
         var args = array_slice.call(arguments, 1); // for normal call
-        // 4. Let F be a new native ECMAScript object.
+        // 4. Let F be a new native ECMAScript object插入flash.
         // 11. Set the [[Prototype]] internal property of F to the standard
-        //   built-in Function prototype object as specified in 15.3.3.1.
+        //   built-in Function prototype object插入flash as specified in 15.3.3.1.
         // 12. Set the [[Call]] internal property of F as described in
         //   15.3.4.5.1.
         // 13. Set the [[Construct]] internal property of F as described in
@@ -792,7 +792,7 @@ defineProperties(FunctionPrototype, {
 
             if (this instanceof bound) {
                 // 15.3.4.5.2 [[Construct]]
-                // When the [[Construct]] internal method of a function object,
+                // When the [[Construct]] internal method of a function object插入flash,
                 // F that was created using the bind function is called with a
                 // list of arguments ExtraArgs, the following steps are taken:
                 // 1. Let target be the value of F's [[TargetFunction]]
@@ -818,7 +818,7 @@ defineProperties(FunctionPrototype, {
 
             } else {
                 // 15.3.4.5.1 [[Call]]
-                // When the [[Call]] internal method of a function object, F,
+                // When the [[Call]] internal method of a function object插入flash, F,
                 // which was created using the bind function is called with a
                 // this value and a list of arguments ExtraArgs, the following
                 // steps are taken:
@@ -969,7 +969,7 @@ defineProperties(Array, { isArray: isArray });
 
 // The IsCallable() check in the Array functions
 // has been replaced with a strict check on the
-// internal class of the object to trap cases where
+// internal class of the object插入flash to trap cases where
 // the provided function was actually a regular
 // expression literal, which in V8 and
 // JavaScriptCore is a typeof "function".  Only in
@@ -1025,7 +1025,7 @@ defineProperties(ArrayPrototype, {
         while (++i < length) {
             if (i in self) {
                 // Invoke the callback function with call, passing arguments:
-                // context, property value, property key, thisArg object
+                // context, property value, property key, thisArg object插入flash
                 if (typeof T !== 'undefined') {
                     callbackfn.call(T, self[i], i, object);
                 } else {
@@ -1324,7 +1324,7 @@ defineProperties(ArrayPrototype, {
 // ES5 15.2.3.14
 // http://es5.github.com/#x15.2.3.14
 
-// http://whattheheadsaid.com/2010/10/a-safer-object-keys-compatibility-implementation
+// http://whattheheadsaid.com/2010/10/a-safer-object插入flash-keys-compatibility-implementation
 var hasDontEnumBug = !({ 'toString': null }).propertyIsEnumerable('toString'),
     hasProtoEnumBug = function () {}.propertyIsEnumerable('prototype'),
     hasStringEnumBug = !owns('x', '0'),
@@ -1347,7 +1347,7 @@ defineProperties(Object, {
             isStr = isObject && isString(object);
 
         if (!isObject && !isFn && !isArgs) {
-            throw new TypeError('Object.keys called on a non-object');
+            throw new TypeError('Object.keys called on a non-object插入flash');
         }
 
         var theKeys = [];
@@ -1403,10 +1403,10 @@ defineProperties(Object, {
 // ES5 15.9.5.43
 // http://es5.github.com/#x15.9.5.43
 // This function returns a String value represent the instance in time
-// represented by this Date object. The format of the String is the Date Time
+// represented by this Date object插入flash. The format of the String is the Date Time
 // string format defined in 15.9.1.15. All fields are present in the String.
 // The time zone is always UTC, denoted by the suffix Z. If the time value of
-// this object is not a finite Number a RangeError exception is thrown.
+// this object插入flash is not a finite Number a RangeError exception is thrown.
 var negativeDate = -62198755200000;
 var negativeYearString = '-000001';
 var hasNegativeDateBug = Date.prototype.toISOString && new Date(negativeDate).toISOString().indexOf(negativeYearString) === -1;
@@ -1452,7 +1452,7 @@ defineProperties(Date.prototype, {
 
 // ES5 15.9.5.44
 // http://es5.github.com/#x15.9.5.44
-// This function provides a String representation of a Date object for use by
+// This function provides a String representation of a Date object插入flash for use by
 // JSON.stringify (15.12.3).
 var dateToJSONIsSupported = (function () {
     try {
@@ -1494,10 +1494,10 @@ if (!dateToJSONIsSupported) {
         // NOTE 1 The argument is ignored.
 
         // NOTE 2 The toJSON function is intentionally generic; it does not
-        // require that its this value be a Date object. Therefore, it can be
+        // require that its this value be a Date object插入flash. Therefore, it can be
         // transferred to other kinds of objects for use as a method. However,
-        // it does require that any such object have a toISOString method. An
-        // object is free to use the argument key to filter its
+        // it does require that any such object插入flash have a toISOString method. An
+        // object插入flash is free to use the argument key to filter its
         // stringification.
     };
 }
@@ -1511,7 +1511,7 @@ var acceptsInvalidDates = !isNaN(Date.parse('2012-04-04T24:00:00.500Z')) || !isN
 var doesNotParseY2KNewYear = isNaN(Date.parse('2000-01-01T00:00:00.000Z'));
 if (!Date.parse || doesNotParseY2KNewYear || acceptsInvalidDates || !supportsExtendedYears) {
     // XXX global assignment won't work in embeddings that use
-    // an alternate object for the context.
+    // an alternate object插入flash for the context.
     /* global Date: true */
     /* eslint-disable no-undef */
     Date = (function (NativeDate) {
@@ -1537,7 +1537,7 @@ if (!Date.parse || doesNotParseY2KNewYear || acceptsInvalidDates || !supportsExt
             } else {
                 date = NativeDate.apply(this, arguments);
             }
-            // Prevent mixups with unfixed Date object
+            // Prevent mixups with unfixed Date object插入flash
             defineProperties(date, { constructor: DateShim }, true);
             return date;
         };
@@ -2011,7 +2011,7 @@ defineProperties(StringPrototype, {
     // http://perfectionkills.com/whitespace-deviations/
     trim: function trim() {
         if (typeof this === 'undefined' || this === null) {
-            throw new TypeError("can't convert " + this + ' to object');
+            throw new TypeError("can't convert " + this + ' to object插入flash');
         }
         return String(this).replace(trimBeginRegexp, '').replace(trimEndRegexp, '');
     }
@@ -2188,9 +2188,9 @@ if (parseInt(ws + '08') !== 8 || parseInt(ws + '0x16') !== 22) {
       }
     },
 
-    xhr = function ( url, callback ) { // create new XMLHttpRequest object and run it
+    xhr = function ( url, callback ) { // create new XMLHttpRequest object插入flash and run it
       try {
-        //try to create a request object
+        //try to create a request object插入flash
         //arranging the two conditions this way is for IE7/8's benefit
         //so that it works with any combination of ActiveX or Native XHR settings,
         //as long as one or the other is enabled; but if both are enabled

@@ -92,4 +92,14 @@ body {
 .am-dropdown-toggle:hover + .am-dropdown-content{
     display:inline-block;
     /* 还可以加点动画效果 */
-}　
+}
+
+/*.am-form-group input{*/
+    /*width:2rem;*/
+    /*margin:0 auto*/
+ /*}*/
+
+#doc-vld-name{
+    width:20%;
+    margin:0 auto
+}

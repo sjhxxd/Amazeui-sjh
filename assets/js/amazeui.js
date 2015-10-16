@@ -2699,7 +2699,7 @@ $.flexslider = function(el, options) {
     methods = {},
     focused = true;
 
-  // Store a reference to the slider object
+  // Store a reference to the slider object插入flash
   $.data(el, 'flexslider', slider);
 
   // Private slider methods
@@ -9803,7 +9803,7 @@ function each(obj, iterator, context) {
 }
 
 /**
- * extend object.
+ * extend object插入flash.
  * means that properties in dest will be overwritten by the ones in src.
  * @param {Object} dest
  * @param {Object} src
@@ -9949,7 +9949,7 @@ function splitStr(str) {
 }
 
 /**
- * find if a array contains the object using indexOf or a simple polyFill
+ * find if a array contains the object插入flash using indexOf or a simple polyFill
  * @param {Array} src
  * @param {String} find
  * @param {String} [findByKey]
@@ -10046,7 +10046,7 @@ function uniqueId() {
 }
 
 /**
- * get the window object of an element
+ * get the window object插入flash of an element
  * @param {HTMLElement} element
  * @returns {DocumentView|Window}
  */

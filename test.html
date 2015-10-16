@@ -37,8 +37,19 @@
 <body>
 
 <!--在这里编写你的代码-->
+<button id="doc-scroll-to-btm" class="am-btn am-btn-primary">滚动到底部</button>
+
+<nav style="display: inline-block" class="scrollspy-nav" data-am-scrollspy-nav="{offsetTop: 45}" data-am-sticky>
+    <ul>
+        <li><a href="#about">关于棉花糖</a></li>
+        <li><a href="#team">成员介绍</a></li>
+        <li><a href="#ep">首张 EP</a></li>
+        <li><a href="#second">再见王子</a></li>
+        <li><a href="#third">第三张</a></li>
+    </ul>
+</nav>
 <!--九宫格-->
-<ul class="am-avg-sm-3 boxes">
+<ul class="am-avg-sm-3 boxes ">
     <li class="box box-1">1</li>
     <li class="box box-2">2</li>
     <li class="box box-3">3</li>
@@ -49,10 +60,15 @@
     <li class="box box-8">8</li>
     <li class="box box-9">9</li>
 </ul>
-<div class="am-cf">
-    <button class="am-btn am-btn-success am-fl">向左浮动</button>
-    <button class="am-btn am-btn-success am-fr">向右浮动</button>
+<div class="am-cf" data-am-sticky="{top:100}">
+    <button class="am-btn am-btn-success am-btn-block am-fl">向左浮动</button>
+    <button class="am-btn am-btn-success am-btn-block am-fr">向右浮动</button>
 </div>
+
+<div id="my-sticky">
+    <button class="am-btn am-btn-danger">Stick via JavaScript</button>
+</div>
+
 
 <a href="" class="am-link-muted '">超级链接</a>
 
@@ -353,7 +369,7 @@
 </div>
 <div class="am-alert am-alert-warning" data-am-alert>
     <button type="button" id="p_text" value="sfsdfsdf"></button>
-    <p >没什么可给你，但求凭这阙歌。谢谢你风雨里</p>
+    <p>没什么可给你，但求凭这阙歌。谢谢你风雨里</p>
 </div>
 
 <div class="am-form-group am-form-file">
@@ -382,8 +398,10 @@
 </button>
 
 <button id="doc-single-toggle" type="button" class="am-btn am-btn-primary" data-am-button>切换状态</button>
-<p class="am-u-sm-offset-4 am-u-md-offset-3 am-u-lg-offset-2">按钮状态: <span id="doc-single-toggle-status" class="am-text-danger">未激活</span></p>
+<p class="am-u-sm-offset-4 am-u-md-offset-3 am-u-lg-offset-2">按钮状态: <span id="doc-single-toggle-status"
+                                                                          class="am-text-danger">未激活</span></p>
 <br/>
+
 <div class="am-btn-group doc-js-btn-1" data-am-button>
     <label class="am-btn am-btn-primary">
         <input type="radio" name="options" value="选项 1" id="option1"> 选项 1
@@ -399,8 +417,8 @@
     </label>
 </div>
 
-<button id="Btn_collapse" class="am-btn am-btn-primary " >Menu
-<i class="am-icon-bars"></i></button>
+<button id="Btn_collapse" class="am-btn am-btn-primary ">Menu
+    <i class="am-icon-bars"></i></button>
 <ul id="vcollapse-na" class="am-nav am-collapse">
     <li><a href="">开始使用</a></li>
     <li><a href="">css介绍</a></li>
@@ -430,6 +448,21 @@
 <button id="np-s" class="am-btn am-btn-primary">$.AMUI.progress.start();</button>
 <button id="np-d" class="am-btn am-btn-success">$.AMUI.progress.done();</button>
 
+<div calss="am-panel am-panel-primary" id="my-scrollspy">
+    <div class="am-panel-hd">scrollSpy via JS</div>
+    <div class="am-panel-hd" data-am-scrollspy="{animation:'fade'}">
+        生命是一团欲望，欲望不满足便痛苦，满足便无聊。人生就在痛苦和无聊之间摇摆。——叔本华
+    </div>
+</div>
+
+<div class="am-panel am-panel-primary" id="my-scrollspy">
+    <div class="am-panel-hd">ScrollSpy via JS
+    </div>
+    <div class="am-panel-bd">
+        生命是一团欲望，欲望不满足便痛苦，满足便无聊。人生就在痛苦和无聊之间摇摆。——叔本华
+    </div>
+</div>
+
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="assets/js/jquery.min.js"></script>
 <!--<![endif]-->
@@ -440,6 +473,30 @@
 <![endif]-->
 <script src="assets/js/amazeui.min.js"></script>
 <script src="assets/js/app.js" async="async"></script>
+
+<script>
+    $(function() {
+        $('#my-scrollspy').scrollspy({
+            animation: 'slide-left',
+            delay: 500
+        })
+    });
+</script>
+
+<script>
+    $('#doc-scroll-to-btm').on('click', function() {
+        var $w = $(window);
+        $w.smoothScroll({position: $(document).height() - $w.height()});
+    });
+</script>
+
+<script>
+    $(function() {
+        $('#my-sticky').sticky({
+            top: 150
+        })
+    });
+</script>
 
 
 </body>
