@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="board"></div>
+<script type="text/javascript">
+    var board = document.getElementById("board");
+    var e3 = document.createElement("input");
+    e3.setAttribute("type", "text");
+    e3.setAttribute("name", "q");
+    e3.setAttribute("value", "使用setAttribute");
+    e3.setAttribute("onclick", "javascript:alert('This is a test!');");
+    var object = board.appendChild(e3);
+</script>
+</body>
+</html>

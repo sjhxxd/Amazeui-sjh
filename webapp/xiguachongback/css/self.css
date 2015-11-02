@@ -1,0 +1,59 @@
+
+/*添加*/
+.am-padding-left{
+    text-align: center;  /*左导航内容居中*/
+}
+.form-control{
+    width:90%;
+    height:3rem
+}
+
+.am-group{
+    margin-left: 5%;
+}
+
+.am-u-md-5{
+    margin-left: 5%;
+}
+.am-panel-title{
+    text-align: center;
+    font-size: 3.5rem;
+}
+.panel-footer-btn{
+    float: right;
+    margin-right: 5%;
+}
+
+#xianshi{
+    position: absolute;
+    left:30px;
+    top:14px
+}
+.am-form select {
+    position: absolute;
+    left:70px;
+    top:10px;
+    width:5rem
+}
+#jieguo{
+    position: absolute;
+    left:140px;
+    top:14px
+}
+#sousuo{
+    position: absolute;
+    right:200px;
+    top:14px
+}
+.am-selected-btn{
+    height:3rem
+}
+.admin-sidebar-list li a{
+    padding-left: 5.9rem
+}
+table.dataTable thead>tr>th{
+    text-align: center;
+}
+table.dataTable tbody>tr>td{
+    text-align: center;
+}

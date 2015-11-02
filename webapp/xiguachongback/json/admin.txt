@@ -1,0 +1,244 @@
+{
+  "data": [
+    [
+      "Trident",
+      "管理员",
+      "Win 95+",
+      4,
+      "X",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Trident",
+      "Internet Explorer 5.0",
+      "Win 95+",
+      5,
+      "C",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Trident",
+      "Internet Explorer 5.0",
+      "Win 95+",
+      5,
+      "C",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Trident",
+      "Internet Explorer 5.0",
+      "Win 95+",
+      5,
+      "C",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Trident",
+      "Internet Explorer 5.0",
+      "Win 95+",
+      5,
+      "C",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Trident",
+      "Internet Explorer 5.5",
+      "Win 95+",
+      5.5,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Trident",
+      "Internet Explorer 5.5",
+      "Win 95+",
+      5.5,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Trident",
+      "Internet Explorer 5.5",
+      "Win 95+",
+      5.5,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Trident",
+      "Internet Explorer 5.5",
+      "Win 95+",
+      5.5,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Trident",
+      "Internet Explorer 5.5",
+      "Win 95+",
+      5.5,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Gecko",
+      "火狐 2",
+      "Win 98+ / OSX.2+",
+      1.8,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Gecko",
+      "火狐 2",
+      "Win 98+ / OSX.2+",
+      1.8,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Gecko",
+      "火狐 2",
+      "Win 98+ / OSX.2+",
+      1.8,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Gecko",
+      "Firefox 2",
+      "Win 98+ / OSX.2+",
+      1.8,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Gecko",
+      "Firefox 2",
+      "Win 98+ / OSX.2+",
+      1.8,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Gecko",
+      "Firefox 2",
+      "Win 98+ / OSX.2+",
+      1.8,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Gecko",
+      "Firefox 2",
+      "Win 98+ / OSX.2+",
+      1.8,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Webkit",
+      "Safari 1.2",
+      "OSX.3",
+      125.5,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Webkit",
+      "Safari 1.2",
+      "OSX.3",
+      125.5,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Webkit",
+      "Safari 1.2",
+      "OSX.3",
+      125.5,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Webkit",
+      "Safari 1.3",
+      "OSX.3",
+      312.8,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Webkit",
+      "Safari 2.0",
+      "OSX.4+",
+      419.3,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Webkit",
+      "Safari 2.0",
+      "OSX.4+",
+      419.3,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ],
+    [
+      "Webkit",
+      "Safari 3.0",
+      "OSX.4+",
+      522.1,
+      "A",
+      "DF",
+      "GH",
+      "JK"
+    ]
+  ]
+}
