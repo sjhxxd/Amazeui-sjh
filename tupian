@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script id="jquery_182" type="text/javascript" class="library"
+            src="/js/sandbox/jquery/jquery-1.8.2.min.js"></script>
+    <style type="text/css">
+        *{
+            margin :0px;
+            padding:0px;
+        }
+
+        body{
+            background:#000;
+        }
+        .div1{
+            left: 50%;
+            top: 1%;
+            z-index:-1;
+        }
+        .ball-box{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            margin:-150px 0 0 -150px 1208px;
+            perspective-origin:50% 50% ;
+            perspective: 3000px;
+        }
+        @-webkit-keyframes rotate3d{
+            0%{transform:rotateZ(0deg) rotateY(0);}
+            100%{transform:rotateZ(0deg) rotateY(360deg);}
+        }
+        .ball{
+            height: 100%;
+            transform-style:preserve-3d;
+            -webkit-animation:rotate3d 10s infinite linear;
+        }
+        .ball > div{
+            border: 1px #fff solid;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        translateZ(1000px)
+        }
+        .img1{
+            margin:10px;
+            right:150px;
+            position:absolute;
+            top:-70px;
+        }
+        .img2{
+            margin:10px;
+            position:absolute;
+            left:150px;
+            top:-70px;
+        }
+        /* 各线框平均角度计算：360deg/2/5deg */
+        .ball .line-1{transform: rotateY(0);}
+        .ball .line-2{transform: rotateY(36deg);}
+        .ball .line-3{transform: rotateY(72deg);}
+        .ball .line-4{transform: rotateY(108deg);}
+        .ball .line-5{transform: rotateY(144deg);}
+        /*music start*/
+        #music{
+            width: 44px;
+            height: 44px;
+            border:5px solid red ;;
+            background-size: 100% 100%;
+            margin: 300px auto auto 400px;
+            -moz-border-radius: 100%;
+            -webkit-border-radius: 100%;
+        }
+        #audio-btn{
+            width:100%;
+            height:100%;
+        }
+        .on{
+            background: url("http://sandbox.runjs.cn/uploads/rs/182/yhznieou/music_on.png")no-repeat 0 0;
+            -webkit-animation: rotating 1.2s linear infinite;
+            animation: rotating 1.2s linear infinite;
+        }
+        .off{background: url('http://sandbox.runjs.cn/uploads/rs/182/yhznieou/music_off.png') no-repeat 0 0;}
+        @-webkit-keyframes rotating {
+            from{/*transform：【动作】：旋转 div 元素：*/
+                -webkit-transform: rotate(0deg);/* Safari 和 Chrome */
+                -moz-transform: rotate(0deg);/* Firefox */
+                -ms-transform: rotate(0deg);/* IE 9 */
+                -o-transform: rotate(0deg);/* Opera */
+                transform: rotate(0deg);
+            }
+            to{
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotating {
+            from{
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            to{
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        /*music end*/
+
+
+    </style>
+</head>
+<body>
+<div id="music">
+    <div id="audio-btn" class="on">
+        <audio loop="loop" src="http://sc1.111ttt.com/2015/5/12/09/105091125538.mp3" id="media"
+               preload="preload"></audio>
+    </div>
+</div>
+<!--img-->
+<div class="ball-box div1 ">
+    <div class="ball ">
+        <div class="line-1">
+            <img class="img1" src="http://b77.photo.store.qq.com/psu?/bea09dfa-45c3-4529-a347-3239c870c047/WdTrjAiSp.0GAFtT4LSDDI8ghVCeRaiTzn5bX*3OeGU!/b/YXGW9y0yNAAAYm8Q9i3TNAAA&bo=8ABAAQAAAAABAJY!&rf=viewer_4">
+            <img class="img2" src="http://sandbox.runjs.cn/uploads/rs/182/yhznieou/2.jpg">
+        </div>
+        <div class="line-2">
+            <img class="img1" src="http://sandbox.runjs.cn/uploads/rs/182/yhznieou/3.jpg">
+            <img class="img2" src="http://sandbox.runjs.cn/uploads/rs/182/yhznieou/4.jpg">
+        </div>
+        <div class="line-3">
+            <img class="img1" src="http://sandbox.runjs.cn/uploads/rs/182/yhznieou/5.jpg">
+            <img class="img2" src="http://sandbox.runjs.cn/uploads/rs/182/yhznieou/6.jpg">
+
+        </div>
+        <div class="line-4">
+            <img class="img1" src="http://sandbox.runjs.cn/uploads/rs/182/yhznieou/7.jpg">
+            <img class="img2" src="http://sandbox.runjs.cn/uploads/rs/182/yhznieou/8.jpg">
+        </div>
+        <div class="line-5">
+            <img class="img1" src="http://sandbox.runjs.cn/uploads/rs/182/yhznieou/9.jpg">
+            <img class="img2" src="http://sandbox.runjs.cn/uploads/rs/182/yhznieou/ly.jpg">
+        </div>
+    </div>
+</div>
+<!--img-->
+
+<script>
+    $('#audio-btn').on('click',function(){
+        var className = $("#audio-btn").attr('class');
+        audio = document.getElementById('media');
+        (className == 'on')
+                ? $('#audio-btn').removeClass('on').addClass('off')
+                : $('#audio-btn').removeClass('off').addClass('on');
+        (className == 'on')
+                ? audio.pause()
+                : audio.play();
+    });
+
+    //页面加载后执行
+    window.onload = function(){
+        document.getElementById('media').play();
+    }
+</script>
+</body>
+
+</html>
